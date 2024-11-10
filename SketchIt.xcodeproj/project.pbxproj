@@ -1,0 +1,1038 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		78260CC12CE11553004F122E /* SketchItApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78260CC02CE11553004F122E /* SketchItApp.swift */; };
+		78260CC32CE11553004F122E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78260CC22CE11553004F122E /* ContentView.swift */; };
+		78260CC52CE11555004F122E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78260CC42CE11555004F122E /* Assets.xcassets */; };
+		78260CC82CE11555004F122E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78260CC72CE11555004F122E /* Preview Assets.xcassets */; };
+		78260CD22CE11555004F122E /* SketchItTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78260CD12CE11555004F122E /* SketchItTests.swift */; };
+		78260CDC2CE11555004F122E /* SketchItUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78260CDB2CE11555004F122E /* SketchItUITests.swift */; };
+		78260CDE2CE11555004F122E /* SketchItUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78260CDD2CE11555004F122E /* SketchItUITestsLaunchTests.swift */; };
+		78260CE42CE11555004F122E /* SketchIt Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 78260CE32CE11555004F122E /* SketchIt Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		78260CE92CE11555004F122E /* SketchItApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78260CE82CE11555004F122E /* SketchItApp.swift */; };
+		78260CED2CE11556004F122E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78260CEC2CE11556004F122E /* Assets.xcassets */; };
+		78260CF02CE11556004F122E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78260CEF2CE11556004F122E /* Preview Assets.xcassets */; };
+		78260CFA2CE11556004F122E /* SketchIt_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78260CF92CE11556004F122E /* SketchIt_Watch_AppTests.swift */; };
+		78260D042CE11556004F122E /* SketchIt_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78260D032CE11556004F122E /* SketchIt_Watch_AppUITests.swift */; };
+		78260D062CE11556004F122E /* SketchIt_Watch_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78260D052CE11556004F122E /* SketchIt_Watch_AppUITestsLaunchTests.swift */; };
+		78260D1D2CE1158F004F122E /* SketchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78260D1C2CE1158F004F122E /* SketchListView.swift */; };
+		78260D202CE11607004F122E /* SketchStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78260D1F2CE11607004F122E /* SketchStore.swift */; };
+		78260D222CE11636004F122E /* Sketch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78260D212CE11636004F122E /* Sketch.swift */; };
+		78260D242CE11668004F122E /* SketchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78260D232CE11668004F122E /* SketchView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		78260CCE2CE11555004F122E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78260CB52CE11553004F122E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78260CBC2CE11553004F122E;
+			remoteInfo = SketchIt;
+		};
+		78260CD82CE11555004F122E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78260CB52CE11553004F122E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78260CBC2CE11553004F122E;
+			remoteInfo = SketchIt;
+		};
+		78260CE52CE11555004F122E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78260CB52CE11553004F122E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78260CE22CE11555004F122E;
+			remoteInfo = "SketchIt Watch App";
+		};
+		78260CF62CE11556004F122E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78260CB52CE11553004F122E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78260CE22CE11555004F122E;
+			remoteInfo = "SketchIt Watch App";
+		};
+		78260D002CE11556004F122E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 78260CB52CE11553004F122E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 78260CE22CE11555004F122E;
+			remoteInfo = "SketchIt Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		78260D0C2CE11556004F122E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				78260CE42CE11555004F122E /* SketchIt Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		78260CBD2CE11553004F122E /* SketchIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SketchIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78260CC02CE11553004F122E /* SketchItApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchItApp.swift; sourceTree = "<group>"; };
+		78260CC22CE11553004F122E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		78260CC42CE11555004F122E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		78260CC72CE11555004F122E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		78260CCD2CE11555004F122E /* SketchItTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SketchItTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78260CD12CE11555004F122E /* SketchItTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchItTests.swift; sourceTree = "<group>"; };
+		78260CD72CE11555004F122E /* SketchItUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SketchItUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		78260CDB2CE11555004F122E /* SketchItUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchItUITests.swift; sourceTree = "<group>"; };
+		78260CDD2CE11555004F122E /* SketchItUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchItUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		78260CE32CE11555004F122E /* SketchIt Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SketchIt Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78260CE82CE11555004F122E /* SketchItApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchItApp.swift; sourceTree = "<group>"; };
+		78260CEC2CE11556004F122E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		78260CEF2CE11556004F122E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		78260CF52CE11556004F122E /* SketchIt Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SketchIt Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78260CF92CE11556004F122E /* SketchIt_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchIt_Watch_AppTests.swift; sourceTree = "<group>"; };
+		78260CFF2CE11556004F122E /* SketchIt Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SketchIt Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		78260D032CE11556004F122E /* SketchIt_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchIt_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		78260D052CE11556004F122E /* SketchIt_Watch_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchIt_Watch_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		78260D1C2CE1158F004F122E /* SketchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchListView.swift; sourceTree = "<group>"; };
+		78260D1F2CE11607004F122E /* SketchStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchStore.swift; sourceTree = "<group>"; };
+		78260D212CE11636004F122E /* Sketch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sketch.swift; sourceTree = "<group>"; };
+		78260D232CE11668004F122E /* SketchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78260CBA2CE11553004F122E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78260CCA2CE11555004F122E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78260CD42CE11555004F122E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78260CE02CE11555004F122E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78260CF22CE11556004F122E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78260CFC2CE11556004F122E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		78260CB42CE11553004F122E = {
+			isa = PBXGroup;
+			children = (
+				78260CBF2CE11553004F122E /* SketchIt */,
+				78260CD02CE11555004F122E /* SketchItTests */,
+				78260CDA2CE11555004F122E /* SketchItUITests */,
+				78260CE72CE11555004F122E /* SketchIt Watch App */,
+				78260CF82CE11556004F122E /* SketchIt Watch AppTests */,
+				78260D022CE11556004F122E /* SketchIt Watch AppUITests */,
+				78260CBE2CE11553004F122E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		78260CBE2CE11553004F122E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78260CBD2CE11553004F122E /* SketchIt.app */,
+				78260CCD2CE11555004F122E /* SketchItTests.xctest */,
+				78260CD72CE11555004F122E /* SketchItUITests.xctest */,
+				78260CE32CE11555004F122E /* SketchIt Watch App.app */,
+				78260CF52CE11556004F122E /* SketchIt Watch AppTests.xctest */,
+				78260CFF2CE11556004F122E /* SketchIt Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78260CBF2CE11553004F122E /* SketchIt */ = {
+			isa = PBXGroup;
+			children = (
+				78260CC02CE11553004F122E /* SketchItApp.swift */,
+				78260CC22CE11553004F122E /* ContentView.swift */,
+				78260CC42CE11555004F122E /* Assets.xcassets */,
+				78260CC62CE11555004F122E /* Preview Content */,
+			);
+			path = SketchIt;
+			sourceTree = "<group>";
+		};
+		78260CC62CE11555004F122E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				78260CC72CE11555004F122E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		78260CD02CE11555004F122E /* SketchItTests */ = {
+			isa = PBXGroup;
+			children = (
+				78260CD12CE11555004F122E /* SketchItTests.swift */,
+			);
+			path = SketchItTests;
+			sourceTree = "<group>";
+		};
+		78260CDA2CE11555004F122E /* SketchItUITests */ = {
+			isa = PBXGroup;
+			children = (
+				78260CDB2CE11555004F122E /* SketchItUITests.swift */,
+				78260CDD2CE11555004F122E /* SketchItUITestsLaunchTests.swift */,
+			);
+			path = SketchItUITests;
+			sourceTree = "<group>";
+		};
+		78260CE72CE11555004F122E /* SketchIt Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				78260D1E2CE115BC004F122E /* Models */,
+				78260CE82CE11555004F122E /* SketchItApp.swift */,
+				78260D1C2CE1158F004F122E /* SketchListView.swift */,
+				78260CEC2CE11556004F122E /* Assets.xcassets */,
+				78260CEE2CE11556004F122E /* Preview Content */,
+				78260D232CE11668004F122E /* SketchView.swift */,
+			);
+			path = "SketchIt Watch App";
+			sourceTree = "<group>";
+		};
+		78260CEE2CE11556004F122E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				78260CEF2CE11556004F122E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		78260CF82CE11556004F122E /* SketchIt Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				78260CF92CE11556004F122E /* SketchIt_Watch_AppTests.swift */,
+			);
+			path = "SketchIt Watch AppTests";
+			sourceTree = "<group>";
+		};
+		78260D022CE11556004F122E /* SketchIt Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				78260D032CE11556004F122E /* SketchIt_Watch_AppUITests.swift */,
+				78260D052CE11556004F122E /* SketchIt_Watch_AppUITestsLaunchTests.swift */,
+			);
+			path = "SketchIt Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		78260D1E2CE115BC004F122E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				78260D1F2CE11607004F122E /* SketchStore.swift */,
+				78260D212CE11636004F122E /* Sketch.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78260CBC2CE11553004F122E /* SketchIt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78260D0D2CE11556004F122E /* Build configuration list for PBXNativeTarget "SketchIt" */;
+			buildPhases = (
+				78260CB92CE11553004F122E /* Sources */,
+				78260CBA2CE11553004F122E /* Frameworks */,
+				78260CBB2CE11553004F122E /* Resources */,
+				78260D0C2CE11556004F122E /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78260CE62CE11555004F122E /* PBXTargetDependency */,
+			);
+			name = SketchIt;
+			productName = SketchIt;
+			productReference = 78260CBD2CE11553004F122E /* SketchIt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		78260CCC2CE11555004F122E /* SketchItTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78260D102CE11556004F122E /* Build configuration list for PBXNativeTarget "SketchItTests" */;
+			buildPhases = (
+				78260CC92CE11555004F122E /* Sources */,
+				78260CCA2CE11555004F122E /* Frameworks */,
+				78260CCB2CE11555004F122E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78260CCF2CE11555004F122E /* PBXTargetDependency */,
+			);
+			name = SketchItTests;
+			productName = SketchItTests;
+			productReference = 78260CCD2CE11555004F122E /* SketchItTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		78260CD62CE11555004F122E /* SketchItUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78260D132CE11556004F122E /* Build configuration list for PBXNativeTarget "SketchItUITests" */;
+			buildPhases = (
+				78260CD32CE11555004F122E /* Sources */,
+				78260CD42CE11555004F122E /* Frameworks */,
+				78260CD52CE11555004F122E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78260CD92CE11555004F122E /* PBXTargetDependency */,
+			);
+			name = SketchItUITests;
+			productName = SketchItUITests;
+			productReference = 78260CD72CE11555004F122E /* SketchItUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		78260CE22CE11555004F122E /* SketchIt Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78260D092CE11556004F122E /* Build configuration list for PBXNativeTarget "SketchIt Watch App" */;
+			buildPhases = (
+				78260CDF2CE11555004F122E /* Sources */,
+				78260CE02CE11555004F122E /* Frameworks */,
+				78260CE12CE11555004F122E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SketchIt Watch App";
+			productName = "SketchIt Watch App";
+			productReference = 78260CE32CE11555004F122E /* SketchIt Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		78260CF42CE11556004F122E /* SketchIt Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78260D162CE11556004F122E /* Build configuration list for PBXNativeTarget "SketchIt Watch AppTests" */;
+			buildPhases = (
+				78260CF12CE11556004F122E /* Sources */,
+				78260CF22CE11556004F122E /* Frameworks */,
+				78260CF32CE11556004F122E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78260CF72CE11556004F122E /* PBXTargetDependency */,
+			);
+			name = "SketchIt Watch AppTests";
+			productName = "SketchIt Watch AppTests";
+			productReference = 78260CF52CE11556004F122E /* SketchIt Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		78260CFE2CE11556004F122E /* SketchIt Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78260D192CE11556004F122E /* Build configuration list for PBXNativeTarget "SketchIt Watch AppUITests" */;
+			buildPhases = (
+				78260CFB2CE11556004F122E /* Sources */,
+				78260CFC2CE11556004F122E /* Frameworks */,
+				78260CFD2CE11556004F122E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				78260D012CE11556004F122E /* PBXTargetDependency */,
+			);
+			name = "SketchIt Watch AppUITests";
+			productName = "SketchIt Watch AppUITests";
+			productReference = 78260CFF2CE11556004F122E /* SketchIt Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78260CB52CE11553004F122E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					78260CBC2CE11553004F122E = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					78260CCC2CE11555004F122E = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 78260CBC2CE11553004F122E;
+					};
+					78260CD62CE11555004F122E = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 78260CBC2CE11553004F122E;
+					};
+					78260CE22CE11555004F122E = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					78260CF42CE11556004F122E = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 78260CE22CE11555004F122E;
+					};
+					78260CFE2CE11556004F122E = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 78260CE22CE11555004F122E;
+					};
+				};
+			};
+			buildConfigurationList = 78260CB82CE11553004F122E /* Build configuration list for PBXProject "SketchIt" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78260CB42CE11553004F122E;
+			productRefGroup = 78260CBE2CE11553004F122E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78260CBC2CE11553004F122E /* SketchIt */,
+				78260CCC2CE11555004F122E /* SketchItTests */,
+				78260CD62CE11555004F122E /* SketchItUITests */,
+				78260CE22CE11555004F122E /* SketchIt Watch App */,
+				78260CF42CE11556004F122E /* SketchIt Watch AppTests */,
+				78260CFE2CE11556004F122E /* SketchIt Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78260CBB2CE11553004F122E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78260CC82CE11555004F122E /* Preview Assets.xcassets in Resources */,
+				78260CC52CE11555004F122E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78260CCB2CE11555004F122E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78260CD52CE11555004F122E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78260CE12CE11555004F122E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78260CF02CE11556004F122E /* Preview Assets.xcassets in Resources */,
+				78260CED2CE11556004F122E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78260CF32CE11556004F122E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78260CFD2CE11556004F122E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78260CB92CE11553004F122E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78260CC32CE11553004F122E /* ContentView.swift in Sources */,
+				78260CC12CE11553004F122E /* SketchItApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78260CC92CE11555004F122E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78260CD22CE11555004F122E /* SketchItTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78260CD32CE11555004F122E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78260CDE2CE11555004F122E /* SketchItUITestsLaunchTests.swift in Sources */,
+				78260CDC2CE11555004F122E /* SketchItUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78260CDF2CE11555004F122E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78260CE92CE11555004F122E /* SketchItApp.swift in Sources */,
+				78260D222CE11636004F122E /* Sketch.swift in Sources */,
+				78260D1D2CE1158F004F122E /* SketchListView.swift in Sources */,
+				78260D242CE11668004F122E /* SketchView.swift in Sources */,
+				78260D202CE11607004F122E /* SketchStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78260CF12CE11556004F122E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78260CFA2CE11556004F122E /* SketchIt_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78260CFB2CE11556004F122E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78260D042CE11556004F122E /* SketchIt_Watch_AppUITests.swift in Sources */,
+				78260D062CE11556004F122E /* SketchIt_Watch_AppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		78260CCF2CE11555004F122E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78260CBC2CE11553004F122E /* SketchIt */;
+			targetProxy = 78260CCE2CE11555004F122E /* PBXContainerItemProxy */;
+		};
+		78260CD92CE11555004F122E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78260CBC2CE11553004F122E /* SketchIt */;
+			targetProxy = 78260CD82CE11555004F122E /* PBXContainerItemProxy */;
+		};
+		78260CE62CE11555004F122E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78260CE22CE11555004F122E /* SketchIt Watch App */;
+			targetProxy = 78260CE52CE11555004F122E /* PBXContainerItemProxy */;
+		};
+		78260CF72CE11556004F122E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78260CE22CE11555004F122E /* SketchIt Watch App */;
+			targetProxy = 78260CF62CE11556004F122E /* PBXContainerItemProxy */;
+		};
+		78260D012CE11556004F122E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 78260CE22CE11555004F122E /* SketchIt Watch App */;
+			targetProxy = 78260D002CE11556004F122E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		78260D072CE11556004F122E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		78260D082CE11556004F122E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		78260D0A2CE11556004F122E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SketchIt Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SketchIt;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.sketch.it.SketchIt;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sketch.it.SketchIt.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		78260D0B2CE11556004F122E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SketchIt Watch App/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SketchIt;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.sketch.it.SketchIt;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sketch.it.SketchIt.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+		78260D0E2CE11556004F122E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SketchIt/Preview Content\"";
+				DEVELOPMENT_TEAM = 249WCU2V96;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SketchIt;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sketch.it.SketchIt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		78260D0F2CE11556004F122E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SketchIt/Preview Content\"";
+				DEVELOPMENT_TEAM = 249WCU2V96;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SketchIt;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sketch.it.SketchIt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78260D112CE11556004F122E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sketch.it.SketchItTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SketchIt.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SketchIt";
+			};
+			name = Debug;
+		};
+		78260D122CE11556004F122E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sketch.it.SketchItTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SketchIt.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SketchIt";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78260D142CE11556004F122E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sketch.it.SketchItUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SketchIt;
+			};
+			name = Debug;
+		};
+		78260D152CE11556004F122E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sketch.it.SketchItUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SketchIt;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78260D172CE11556004F122E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sketch.it.SketchIt-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SketchIt Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SketchIt Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		78260D182CE11556004F122E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sketch.it.SketchIt-Watch-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SketchIt Watch App.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SketchIt Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+		78260D1A2CE11556004F122E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sketch.it.SketchIt-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "SketchIt Watch App";
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Debug;
+		};
+		78260D1B2CE11556004F122E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sketch.it.SketchIt-Watch-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "SketchIt Watch App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 10.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78260CB82CE11553004F122E /* Build configuration list for PBXProject "SketchIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78260D072CE11556004F122E /* Debug */,
+				78260D082CE11556004F122E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78260D092CE11556004F122E /* Build configuration list for PBXNativeTarget "SketchIt Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78260D0A2CE11556004F122E /* Debug */,
+				78260D0B2CE11556004F122E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78260D0D2CE11556004F122E /* Build configuration list for PBXNativeTarget "SketchIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78260D0E2CE11556004F122E /* Debug */,
+				78260D0F2CE11556004F122E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78260D102CE11556004F122E /* Build configuration list for PBXNativeTarget "SketchItTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78260D112CE11556004F122E /* Debug */,
+				78260D122CE11556004F122E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78260D132CE11556004F122E /* Build configuration list for PBXNativeTarget "SketchItUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78260D142CE11556004F122E /* Debug */,
+				78260D152CE11556004F122E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78260D162CE11556004F122E /* Build configuration list for PBXNativeTarget "SketchIt Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78260D172CE11556004F122E /* Debug */,
+				78260D182CE11556004F122E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78260D192CE11556004F122E /* Build configuration list for PBXNativeTarget "SketchIt Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78260D1A2CE11556004F122E /* Debug */,
+				78260D1B2CE11556004F122E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 78260CB52CE11553004F122E /* Project object */;
+}
