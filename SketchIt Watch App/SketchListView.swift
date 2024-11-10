@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct SketchListView: View {
-    @State private var sketches: [Sketch] = []
+    @StateObject private var sketchStore = SketchStore()
     @State private var showingNewSketch = false
+    @State private var selectedSketch: Sketch?
     
     var body: some View {
         List {
@@ -19,8 +20,10 @@ struct SketchListView: View {
                 Label("New Sketch", systemImage: "plus.circle")
             }
             
-            ForEach(sketches) { sketch in
-                NavigationLink(destination: SketchView(sketch: sketch, sketches: $sketches)) {
+            ForEach(sketchStore.sketches) { sketch in
+                Button(action: {
+                    selectedSketch = sketch
+                }) {
                     VStack(alignment: .leading) {
                         Text(sketch.name)
                             .font(.headline)
@@ -30,19 +33,24 @@ struct SketchListView: View {
                     }
                 }
             }
-            .onDelete(perform: deleteSketches)
+            .onDelete(perform: deleteSketch)
         }
         .navigationTitle("Sketches")
         .sheet(isPresented: $showingNewSketch) {
-            SketchView(sketch: Sketch(), sketches: $sketches)
+            SketchView(sketch: Sketch(), sketchStore: sketchStore)
+        }
+        .sheet(item: $selectedSketch) { sketch in
+            SketchView(sketch: sketch, sketchStore: sketchStore, isEditing: true)
         }
     }
     
-    func deleteSketches(at offsets: IndexSet) {
-        sketches.remove(atOffsets: offsets)
+    private func deleteSketch(at offsets: IndexSet) {
+        for index in offsets {
+            let sketch = sketchStore.sketches[index]
+            sketchStore.deleteSketch(sketch)
+        }
     }
 }
-
 
 #Preview {
     SketchListView()

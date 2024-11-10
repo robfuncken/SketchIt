@@ -1,30 +1,45 @@
 import SwiftUI
+import WatchKit
 
 struct SketchView: View {
     @Environment(\.dismiss) private var dismiss
     @State var sketch: Sketch
-    @Binding var sketches: [Sketch]
+    @ObservedObject var sketchStore: SketchStore
+    var isEditing: Bool = false
     @State private var currentLine: [CGPoint] = []
     @State private var lines: [[CGPoint]] = []
     @State private var isNamingSketch = false
     
-    init(sketch: Sketch, sketches: Binding<[Sketch]>) {
+    init(sketch: Sketch, sketchStore: SketchStore, isEditing: Bool = false) {
         _sketch = State(initialValue: sketch)
-        _sketches = sketches
+        self.sketchStore = sketchStore
+        self.isEditing = isEditing
+        
         // Convert the flat points array back into lines
         if !sketch.points.isEmpty {
-            // Assuming each line has at least 2 points
-            var currentPoints: [CGPoint] = []
+            var reconstructedLines: [[CGPoint]] = []
+            var currentLine: [CGPoint] = []
+            
             for point in sketch.points {
-                currentPoints.append(point)
-                if currentPoints.count >= 2 {
-                    _lines = State(initialValue: [currentPoints])
-                    currentPoints = []
+                if point == CGPoint.zero {
+                    // Zero point marks the end of a line
+                    if !currentLine.isEmpty {
+                        reconstructedLines.append(currentLine)
+                        currentLine = []
+                    }
+                } else {
+                    currentLine.append(point)
                 }
             }
-            if !currentPoints.isEmpty {
-                _lines = State(initialValue: [currentPoints])
+            
+            // Add the last line if it exists
+            if !currentLine.isEmpty {
+                reconstructedLines.append(currentLine)
             }
+            
+            _lines = State(initialValue: reconstructedLines)
+        } else {
+            _lines = State(initialValue: [])
         }
     }
     
@@ -71,7 +86,13 @@ struct SketchView: View {
         .toolbar {
             ToolbarItem(placement: .confirmationAction) {
                 Button("Save") {
-                    isNamingSketch = true
+                    if isEditing {
+                        // Direct save for editing existing sketches
+                        saveAndDismiss()
+                    } else {
+                        // Show naming sheet only for new sketches
+                        isNamingSketch = true
+                    }
                 }
             }
         }
@@ -83,15 +104,12 @@ struct SketchView: View {
                     }
                     
                     Section {
-                        Button("Quick Save") {
-                            sketch.name = "Sketch \(Date().formatted(date: .abbreviated, time: .shortened))"
-                            saveAndDismiss()
-                        }
-                        
                         Button("Save") {
+                            if sketch.name.isEmpty {
+                                sketch.name = Date().formatted(date: .abbreviated, time: .shortened)
+                            }
                             saveAndDismiss()
                         }
-                        .disabled(sketch.name.isEmpty)
                         
                         Button("Cancel", role: .cancel) {
                             isNamingSketch = false
@@ -110,13 +128,23 @@ struct SketchView: View {
     }
     
     private func saveSketch() {
-        sketch.points = lines.flatMap { $0 }
+        // Add a zero point between each line to mark line breaks
+        var allPoints: [CGPoint] = []
+        for line in lines {
+            allPoints.append(contentsOf: line)
+            allPoints.append(.zero)  // Add separator between lines
+        }
+        sketch.points = allPoints
         sketch.date = Date()
         
-        if let index = sketches.firstIndex(where: { $0.id == sketch.id }) {
-            sketches[index] = sketch
+        if isEditing {
+            sketchStore.updateSketch(sketch)
         } else {
-            sketches.append(sketch)
+            sketchStore.addSketch(sketch)
         }
     }
 }
+
+//#Preview {
+//    SketchView()
+//}
