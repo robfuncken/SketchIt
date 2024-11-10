@@ -88,4 +88,20 @@ class WatchSketchStore: NSObject, WCSessionDelegate, ObservableObject {
             print("Failed to send sketches to phone: \(error)")
         }
     }
+    
+    // Add this new method
+    nonisolated func session(_ session: WCSession, didReceiveMessage message: [String : Any], replyHandler: @escaping ([String : Any]) -> Void) {
+        Task { @MainActor in
+            if message["request"] as? String == "getAllSketches" {
+                do {
+                    let data = try JSONEncoder().encode(sketches)
+                    print("Watch sending \(sketches.count) sketches in response to request")
+                    replyHandler(["sketches": data])
+                } catch {
+                    print("Watch failed to encode sketches: \(error)")
+                    replyHandler([:])
+                }
+            }
+        }
+    }
 }

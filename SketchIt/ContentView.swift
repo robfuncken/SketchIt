@@ -29,9 +29,13 @@ struct ContentView: View {
                 .padding(.vertical, 8)
             }
             .navigationTitle("Sketches")
+            .refreshable {
+                connectivityManager.refreshSketches()
+            }
             .onAppear {
                 print("ContentView appeared")
                 print("Number of sketches: \(connectivityManager.sketches.count)")
+                connectivityManager.refreshSketches()
             }
         }
     }
