@@ -25,7 +25,11 @@
 		78260D202CE11607004F122E /* SketchStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78260D1F2CE11607004F122E /* SketchStore.swift */; };
 		78260D222CE11636004F122E /* Sketch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78260D212CE11636004F122E /* Sketch.swift */; };
 		78260D242CE11668004F122E /* SketchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78260D232CE11668004F122E /* SketchView.swift */; };
+		78C608F52CE13A0D0009380E /* WatchConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C608F32CE13A0D0009380E /* WatchConnectivityManager.swift */; };
+		78C608F72CE13B3B0009380E /* WatchConnectivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C608F62CE13B3B0009380E /* WatchConnectivityManager.swift */; };
 		78EA5DBE2CE12D8600670ACD /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78EA5DBD2CE12D8600670ACD /* WatchKit.framework */; };
+		78EA5DBF2CE1317E00670ACD /* SketchStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78260D1F2CE11607004F122E /* SketchStore.swift */; };
+		78EA5DC02CE1318000670ACD /* Sketch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78260D212CE11636004F122E /* Sketch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,7 +108,13 @@
 		78260D1F2CE11607004F122E /* SketchStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchStore.swift; sourceTree = "<group>"; };
 		78260D212CE11636004F122E /* Sketch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sketch.swift; sourceTree = "<group>"; };
 		78260D232CE11668004F122E /* SketchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchView.swift; sourceTree = "<group>"; };
+		78C608EF2CE1392F0009380E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		78C608F02CE139420009380E /* SketchIt-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SketchIt-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
+		78C608F32CE13A0D0009380E /* WatchConnectivityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchConnectivityManager.swift; sourceTree = "<group>"; };
+		78C608F62CE13B3B0009380E /* WatchConnectivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchConnectivityManager.swift; sourceTree = "<group>"; };
 		78EA5DBD2CE12D8600670ACD /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS10.5.sdk/System/Library/Frameworks/WatchKit.framework; sourceTree = DEVELOPER_DIR; };
+		78EA5DC12CE1321B00670ACD /* SketchIt.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SketchIt.entitlements; sourceTree = "<group>"; };
+		78EA5DC22CE1323D00670ACD /* SketchIt Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SketchIt Watch App.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +194,9 @@
 		78260CBF2CE11553004F122E /* SketchIt */ = {
 			isa = PBXGroup;
 			children = (
+				78C608F42CE13A0D0009380E /* Models */,
+				78C608EF2CE1392F0009380E /* Info.plist */,
+				78EA5DC12CE1321B00670ACD /* SketchIt.entitlements */,
 				78260CC02CE11553004F122E /* SketchItApp.swift */,
 				78260CC22CE11553004F122E /* ContentView.swift */,
 				78260CC42CE11555004F122E /* Assets.xcassets */,
@@ -220,6 +233,8 @@
 		78260CE72CE11555004F122E /* SketchIt Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				78C608F02CE139420009380E /* SketchIt-Watch-App-Info.plist */,
+				78EA5DC22CE1323D00670ACD /* SketchIt Watch App.entitlements */,
 				78260D1E2CE115BC004F122E /* Models */,
 				78260CE82CE11555004F122E /* SketchItApp.swift */,
 				78260D1C2CE1158F004F122E /* SketchListView.swift */,
@@ -260,6 +275,15 @@
 			children = (
 				78260D1F2CE11607004F122E /* SketchStore.swift */,
 				78260D212CE11636004F122E /* Sketch.swift */,
+				78C608F62CE13B3B0009380E /* WatchConnectivityManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		78C608F42CE13A0D0009380E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				78C608F32CE13A0D0009380E /* WatchConnectivityManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -495,7 +519,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				78260CC32CE11553004F122E /* ContentView.swift in Sources */,
+				78EA5DC02CE1318000670ACD /* Sketch.swift in Sources */,
 				78260CC12CE11553004F122E /* SketchItApp.swift in Sources */,
+				78EA5DBF2CE1317E00670ACD /* SketchStore.swift in Sources */,
+				78C608F52CE13A0D0009380E /* WatchConnectivityManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +551,7 @@
 				78260D222CE11636004F122E /* Sketch.swift in Sources */,
 				78260D1D2CE1158F004F122E /* SketchListView.swift in Sources */,
 				78260D242CE11668004F122E /* SketchView.swift in Sources */,
+				78C608F72CE13B3B0009380E /* WatchConnectivityManager.swift in Sources */,
 				78260D202CE11607004F122E /* SketchStore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -697,11 +725,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SketchIt Watch App/SketchIt Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SketchIt Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 249WCU2V96;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SketchIt-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = SketchIt;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.sketch.it;
@@ -726,11 +757,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SketchIt Watch App/SketchIt Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SketchIt Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 249WCU2V96;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SketchIt-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = SketchIt;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.sketch.it;
@@ -757,12 +791,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SketchIt/SketchIt.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SketchIt/Preview Content\"";
 				DEVELOPMENT_TEAM = 249WCU2V96;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SketchIt/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SketchIt;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -791,12 +827,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SketchIt/SketchIt.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SketchIt/Preview Content\"";
 				DEVELOPMENT_TEAM = 249WCU2V96;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SketchIt/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = SketchIt;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

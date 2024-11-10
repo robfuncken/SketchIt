@@ -4,13 +4,13 @@ import WatchKit
 struct SketchView: View {
     @Environment(\.dismiss) private var dismiss
     @State var sketch: Sketch
-    @ObservedObject var sketchStore: SketchStore
+    @ObservedObject var sketchStore: WatchSketchStore
     var isEditing: Bool = false
     @State private var currentLine: [CGPoint] = []
     @State private var lines: [[CGPoint]] = []
     @State private var isNamingSketch = false
     
-    init(sketch: Sketch, sketchStore: SketchStore, isEditing: Bool = false) {
+    init(sketch: Sketch, sketchStore: WatchSketchStore, isEditing: Bool = false) {
         _sketch = State(initialValue: sketch)
         self.sketchStore = sketchStore
         self.isEditing = isEditing

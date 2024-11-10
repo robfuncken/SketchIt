@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SketchListView: View {
-    @StateObject private var sketchStore = SketchStore()
+    @StateObject private var sketchStore = WatchSketchStore.shared
     @State private var showingNewSketch = false
     @State private var selectedSketch: Sketch?
     

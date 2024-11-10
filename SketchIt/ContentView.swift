@@ -8,17 +8,71 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var connectivityManager = WatchConnectivityManager.shared
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            List(connectivityManager.sketches) { sketch in
+                VStack(alignment: .leading, spacing: 8) {
+                    Text(sketch.name)
+                        .font(.headline)
+                    Text(sketch.date.formatted(date: .abbreviated, time: .shortened))
+                        .font(.caption)
+                        .foregroundColor(.gray)
+                    
+                    SketchPreviewView(sketch: sketch)
+                        .frame(height: 200)
+                        .background(Color.white)
+                        .cornerRadius(8)
+                        .shadow(radius: 2)
+                }
+                .padding(.vertical, 8)
+            }
+            .navigationTitle("Sketches")
+            .onAppear {
+                print("ContentView appeared")
+                print("Number of sketches: \(connectivityManager.sketches.count)")
+            }
         }
-        .padding()
+    }
+}
+
+struct SketchPreviewView: View {
+    let sketch: Sketch
+    
+    var body: some View {
+        Canvas { context, size in
+            var currentLine: [CGPoint] = []
+            for point in sketch.points {
+                if point == .zero {
+                    // Draw the current line
+                    if currentLine.count > 1 {
+                        var path = Path()
+                        path.move(to: currentLine[0])
+                        for point in currentLine.dropFirst() {
+                            path.addLine(to: point)
+                        }
+                        context.stroke(path, with: .color(.black), lineWidth: 2)
+                    }
+                    currentLine = []
+                } else {
+                    currentLine.append(point)
+                }
+            }
+            // Draw any remaining points
+            if currentLine.count > 1 {
+                var path = Path()
+                path.move(to: currentLine[0])
+                for point in currentLine.dropFirst() {
+                    path.addLine(to: point)
+                }
+                context.stroke(path, with: .color(.black), lineWidth: 2)
+            }
+        }
     }
 }
 
 #Preview {
     ContentView()
 }
+
