@@ -136,6 +136,7 @@ struct SketchView: View {
         }
         sketch.points = allPoints
         sketch.date = Date()
+        sketch.lastModified = Date()  // Update lastModified date
         
         if isEditing {
             sketchStore.updateSketch(sketch)

@@ -11,12 +11,14 @@ struct Sketch: Identifiable, Codable {
     var name: String
     var points: [CGPoint]
     var date: Date
+    var lastModified: Date
     
-    init(id: UUID = UUID(), name: String = "New Sketch", points: [CGPoint] = [], date: Date = Date()) {
+    init(id: UUID = UUID(), name: String = "New Sketch", points: [CGPoint] = [], date: Date = Date(), lastModified: Date = Date()) {
         self.id = id
         self.name = name
         self.points = points
         self.date = date
+        self.lastModified = lastModified
     }
 }
 

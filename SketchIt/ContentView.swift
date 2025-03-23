@@ -12,21 +12,24 @@ struct ContentView: View {
     
     var body: some View {
         NavigationStack {
-            List(connectivityManager.sketches) { sketch in
-                VStack(alignment: .leading, spacing: 8) {
-                    Text(sketch.name)
-                        .font(.headline)
-                    Text(sketch.date.formatted(date: .abbreviated, time: .shortened))
-                        .font(.caption)
-                        .foregroundColor(.gray)
-                    
-                    SketchPreviewView(sketch: sketch)
-                        .frame(height: 200)
-                        .background(Color.white)
-                        .cornerRadius(8)
-                        .shadow(radius: 2)
+            List {
+                ForEach(connectivityManager.sketches) { sketch in
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text(sketch.name)
+                            .font(.headline)
+                        Text(sketch.date.formatted(date: .abbreviated, time: .shortened))
+                            .font(.caption)
+                            .foregroundColor(.gray)
+                        
+                        SketchPreviewView(sketch: sketch)
+                            .frame(height: 200)
+                            .background(Color.white)
+                            .cornerRadius(8)
+                            .shadow(radius: 2)
+                    }
+                    .padding(.vertical, 8)
                 }
-                .padding(.vertical, 8)
+                .onDelete(perform: deleteSketches)
             }
             .navigationTitle("Sketches")
             .refreshable {
@@ -37,6 +40,13 @@ struct ContentView: View {
                 print("Number of sketches: \(connectivityManager.sketches.count)")
                 connectivityManager.refreshSketches()
             }
+        }
+    }
+    
+    private func deleteSketches(at offsets: IndexSet) {
+        for index in offsets {
+            let sketch = connectivityManager.sketches[index]
+            connectivityManager.deleteSketch(sketch)
         }
     }
 }
